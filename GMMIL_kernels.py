@@ -11,6 +11,9 @@ Here, data is the concatenated raw encodings of state and action vectors i.e.,
 data = torch.cat([states, actions], 1)
 """
 
+import torch
+import math
+
 def estimate_sigmas(data_1, data_2):
     """
     data_1 : data sampled from initial agent distribution/policy

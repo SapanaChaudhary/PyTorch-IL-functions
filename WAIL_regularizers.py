@@ -6,6 +6,9 @@ https://arxiv.org/abs/1906.08113#
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
 
+import torch
+import math
+
 def l2_reg(g_sa, e_sa, g_o, e_o, wail_epsilon):
     """
     g_sa : concatenated agent/generator data i.e. g_sa = torch.cat([g_states, g_actions], 1)
