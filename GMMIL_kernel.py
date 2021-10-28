@@ -54,7 +54,3 @@ def GMMIL_kernel(data_11, data_22, sigma):
     r = data_11.unsqueeze(0).permute(dims=[1,0,2])
     return torch.exp( -sigma * ((r - data_22)**2).sum(dim=-1))
     
-    
-    
-    
-    
